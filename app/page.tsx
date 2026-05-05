@@ -133,40 +133,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────────────── PORTFOLIO ─────────────────── */}
-      <section className="py-24 bg-[#050d2d]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-14 gap-6">
-            <div>
-              <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">Our Portfolio</p>
-              <h2 className="text-4xl sm:text-5xl font-black text-white">ERP Systems <span className="text-[#f47c20]">We&apos;ve Built</span></h2>
-            </div>
-            <Link href="/our-work" className="text-[#f47c20] text-sm font-semibold hover:underline whitespace-nowrap">View All Projects →</Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {portfolio.map((p) => (
-              <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer"
-                className="group bg-[#0a1744]/50 border border-white/8 hover:border-[#f47c20]/40 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#f47c20]/10">
-                <div className="h-48 flex items-center justify-center p-8" style={{ background: `linear-gradient(135deg, ${p.bg}, ${p.bg}dd)` }}>
-                  {p.logo
-                    // eslint-disable-next-line @next/next/no-img-element
-                    ? <img src={p.logo} alt={p.name} className="max-h-24 max-w-[70%] object-contain group-hover:scale-105 transition-transform duration-400" />
-                    : <span className="text-6xl font-black text-[#f47c20]">{p.initials}</span>
-                  }
-                </div>
-                <div className="p-6">
-                  <span className="inline-block text-xs font-bold text-[#f47c20] bg-[#f47c20]/10 px-3 py-1 rounded-full mb-3">{p.tag}</span>
-                  <h3 className="text-white font-bold text-lg mb-2 group-hover:text-[#f47c20] transition-colors">{p.name}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{p.desc}</p>
-                  <span className="inline-flex items-center gap-1 text-[#f47c20] text-sm font-semibold mt-4">Visit Website →</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─────────────────── WHY US ─────────────────── */}
       <section className="py-28 bg-[#020818] relative overflow-hidden">
         {/* subtle background glow */}
@@ -282,6 +248,40 @@ export default function HomePage() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────── PORTFOLIO ─────────────────── */}
+      <section className="py-24 bg-[#050d2d]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-14 gap-6">
+            <div>
+              <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">Our Portfolio</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-white">ERP Systems <span className="text-[#f47c20]">We&apos;ve Built</span></h2>
+            </div>
+            <Link href="/our-work" className="text-[#f47c20] text-sm font-semibold hover:underline whitespace-nowrap">View All Projects →</Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {portfolio.map((p) => (
+              <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer"
+                className="group bg-[#0a1744]/50 border border-white/8 hover:border-[#f47c20]/40 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#f47c20]/10">
+                <div className="h-48 flex items-center justify-center p-8" style={{ background: `linear-gradient(135deg, ${p.bg}, ${p.bg}dd)` }}>
+                  {p.logo
+                    // eslint-disable-next-line @next/next/no-img-element
+                    ? <img src={p.logo} alt={p.name} className="max-h-24 max-w-[70%] object-contain group-hover:scale-105 transition-transform duration-400" />
+                    : <span className="text-6xl font-black text-[#f47c20]">{p.initials}</span>
+                  }
+                </div>
+                <div className="p-6">
+                  <span className="inline-block text-xs font-bold text-[#f47c20] bg-[#f47c20]/10 px-3 py-1 rounded-full mb-3">{p.tag}</span>
+                  <h3 className="text-white font-bold text-lg mb-2 group-hover:text-[#f47c20] transition-colors">{p.name}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{p.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-[#f47c20] text-sm font-semibold mt-4">Visit Website →</span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
