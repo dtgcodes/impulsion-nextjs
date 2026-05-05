@@ -27,7 +27,7 @@ const portfolio = [
   { name: "Ariana Shipping Line", tag: "Shipping ERP", logo: "https://www.arianashippingline.com/img/logo.png", initials: "ARL", href: "https://www.arianashippingline.com/", desc: "End-to-end shipping management — cargo, fleet, logistics & billing.", bg: "#071a2e" },
   { name: "ASL Shipping Line", tag: "Logistics ERP", logo: "https://www.aslshippingline.com/favicon.ico", initials: "ASL", href: "https://www.aslshippingline.com/", desc: "Integrated logistics ERP for shipment tracking & agent portals.", bg: "#071a12" },
   { name: "American Shipping & Towing", tag: "Marine ERP", logo: "https://americanshippingtowing.com/wp-content/uploads/2021/12/1.png", initials: "AST", href: "https://americanshippingtowing.com/", desc: "Marine operations ERP for towing fleet scheduling & billing.", bg: "#1a0a0a" },
-  { name: "Olfat Shipping", tag: "Freight ERP", logo: "", initials: "OS", href: "https://www.olfatshipping.com/", desc: "Freight forwarding ERP — shipments, customs & client portals.", bg: "#151207" },
+  { name: "Olfat Shipping", tag: "Freight ERP", logo: "/olfat-logo.png", initials: "OS", href: "https://www.olfatshipping.com/", desc: "Freight forwarding ERP — shipments, customs & client portals.", bg: "#0a1a2e" },
   { name: "Rukn Al Fakhama", tag: "Business ERP", logo: "https://ruknalfakhama.com/wp-content/uploads/2023/10/only-circle-e1698833273754.png", initials: "RF", href: "https://ruknalfakhama.com/", desc: "Multi-module ERP — HR, inventory, sales & financial management.", bg: "#0a071a" },
 ];
 

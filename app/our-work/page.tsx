@@ -29,7 +29,7 @@ const portfolio = [
   {
     name: "Olfat Shipping",
     tag: "Freight ERP",
-    logo: "",
+    logo: "/olfat-logo.png",
     initials: "OS",
     href: "https://www.olfatshipping.com/",
     desc: "Freight forwarding ERP managing door-to-door shipment tracking, air and sea freight operations, customs brokerage, client portal, automated invoicing, and real-time status updates.",
