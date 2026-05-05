@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const WA_LINK =
-  "https://wa.me/971585855890?text=Hi%2C%20I%27d%20like%20to%20get%20a%20quote";
+  "https://wa.me/971501668568?text=Hi%2C%20I%27d%20like%20to%20get%20a%20quote";
 
 export default function WhatsAppWidget() {
   const [open, setOpen] = useState(false);

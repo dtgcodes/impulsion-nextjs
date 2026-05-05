@@ -26,7 +26,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2018", title: "Founded in Dubai", desc: "Started with a small team of passionate developers in Business Bay, Dubai." },
+  { year: "2018", title: "Founded in Dubai", desc: "Started with a small team of passionate developers in Deira, Dubai." },
   { year: "2020", title: "100+ Clients Served", desc: "Expanded to digital marketing, SEO, and IT support services across the UAE." },
   { year: "2024", title: "200+ Projects Delivered", desc: "Grown to a full-service IT company trusted by businesses across the Middle East." },
 ];
@@ -54,7 +54,7 @@ export default function AboutPage() {
               Dubai&apos;s Most Trusted<br /><span className="text-[#f47c20]">IT Company</span>
             </h1>
             <p className="text-gray-400 text-lg leading-relaxed mb-10">
-              Impulsion Technologies is a full-service IT company based in <strong className="text-white">Business Bay, Dubai, UAE</strong>. Since 2018, we have delivered 200+ successful projects for businesses ranging from startups to multinational enterprises across the UAE and Middle East.
+              Impulsion Technologies is a full-service IT company based in <strong className="text-white">Deira, Dubai, UAE</strong>. Since 2018, we have delivered 200+ successful projects for businesses ranging from startups to multinational enterprises across the UAE and Middle East.
             </p>
             <div className="flex flex-wrap gap-4 mb-14">
               <Link href="/contact"
@@ -94,8 +94,8 @@ export default function AboutPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/logo.png" alt="Impulsion Technologies" style={{ height: "36px", width: "auto", objectFit: "contain" }} />
                   <div className="border-l border-white/10 pl-4">
-                    <div className="text-white font-bold text-sm">Business Bay, Dubai</div>
-                    <div className="text-gray-400 text-xs">Office 511, Clover Bay Tower</div>
+                    <div className="text-white font-bold text-sm">Deira, Dubai</div>
+                    <div className="text-gray-400 text-xs">Office# 402, Bin Sougat Building, Deira</div>
                   </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-gray-400 leading-relaxed mb-10">
                 <p>Impulsion Technologies was born from a simple belief: every business deserves access to powerful technology — not just large corporations with massive budgets.</p>
                 <p>Starting with a small team of passionate developers in Dubai, we built our reputation by delivering results that exceeded client expectations. From our first ERP system for a UAE logistics company to now managing digital marketing for brands across the region, we have never stopped growing.</p>
-                <p>Today, our team of 15+ experts covers <strong className="text-white">ERP systems, software development, web and app development, digital marketing, SEO, IT infrastructure, and graphic design</strong> — all under one roof at our Business Bay, Dubai office.</p>
+                <p>Today, our team of 15+ experts covers <strong className="text-white">ERP systems, software development, web and app development, digital marketing, SEO, IT infrastructure, and graphic design</strong> — all under one roof at our Deira, Dubai office.</p>
               </div>
 
               {/* Timeline */}
@@ -208,9 +208,9 @@ export default function AboutPage() {
                 className="bg-[#f47c20] hover:bg-[#d4640a] text-white px-9 py-3.5 rounded-xl font-bold transition-colors shadow-lg shadow-[#f47c20]/25">
                 Get In Touch →
               </Link>
-              <a href="tel:+971585855890"
+              <a href="tel:+971501668568"
                 className="border border-white/20 hover:border-white/40 text-white px-9 py-3.5 rounded-xl font-bold transition-colors hover:bg-white/5">
-                📞 +971 58 585 5890
+                📞 +971 50 166 8568
               </a>
             </div>
           </div>

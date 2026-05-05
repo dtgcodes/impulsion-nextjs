@@ -160,7 +160,7 @@ export default function HomePage() {
 
               {/* floating secondary photo */}
               <div className="absolute right-0 top-[10%] w-[46%] h-[52%] rounded-2xl overflow-hidden shadow-2xl shadow-black/60 border-2 border-[#020818]">
-                <Image src="/team2.jpg" alt="Impulsion Technologies office in Business Bay, Dubai" fill className="object-cover" />
+                <Image src="/team2.jpg" alt="Impulsion Technologies office in Deira, Dubai" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#f47c20]/10 to-transparent" />
               </div>
 
@@ -242,7 +242,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
-                <a href="tel:+97142985396"
+                <a href="tel:+971501668568"
                   className="flex items-center gap-3 group">
                   <div className="w-11 h-11 bg-[#f47c20]/10 group-hover:bg-[#f47c20]/20 border border-[#f47c20]/30 rounded-full flex items-center justify-center transition-colors">
                     <svg className="w-5 h-5 text-[#f47c20]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -251,7 +251,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <p className="text-gray-500 text-xs">Call Us Anytime</p>
-                    <p className="text-white font-bold text-base group-hover:text-[#f47c20] transition-colors">042 985 396</p>
+                    <p className="text-white font-bold text-base group-hover:text-[#f47c20] transition-colors">+971 50 166 8568</p>
                   </div>
                 </a>
               </div>
@@ -337,7 +337,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8 text-gray-400 text-sm leading-relaxed">
             <div>
               <p className="mb-4">
-                <strong className="text-gray-300">Impulsion Technologies</strong> is a full-service IT company based in <strong className="text-gray-300">Business Bay, Dubai, UAE</strong>. We specialise in building custom ERP systems, enterprise software, responsive websites, and mobile apps for businesses of all sizes across the UAE. Whether you are a startup in Dubai or a large enterprise in Abu Dhabi, our team delivers scalable technology solutions tailored to your exact business needs.
+                <strong className="text-gray-300">Impulsion Technologies</strong> is a full-service IT company based in <strong className="text-gray-300">Deira, Dubai, UAE</strong>. We specialise in building custom ERP systems, enterprise software, responsive websites, and mobile apps for businesses of all sizes across the UAE. Whether you are a startup in Dubai or a large enterprise in Abu Dhabi, our team delivers scalable technology solutions tailored to your exact business needs.
               </p>
               <p>
                 Our <strong className="text-gray-300">digital marketing services in Dubai</strong> include SEO, Google Ads (PPC), Meta Ads, social media management, and content marketing — helping UAE businesses rank higher on Google and generate consistent, high-quality leads online.
@@ -373,7 +373,7 @@ export default function HomePage() {
                 },
                 {
                   q: "Where is Impulsion Technologies located?",
-                  a: "Impulsion Technologies is located at Office 511, Clover Bay Tower, Business Bay, Dubai, UAE. We serve clients across Dubai, Abu Dhabi, Sharjah, and the wider Middle East region.",
+                  a: "Impulsion Technologies is located at Office# 402, Bin Sougat Building, Al Muraqqabat, Deira, Dubai, UAE. We serve clients across Dubai, Abu Dhabi, Sharjah, and the wider Middle East region.",
                 },
               ].map((faq, i) => (
                 <details key={i} className="group bg-[#050d2d] border border-white/8 hover:border-[#f47c20]/30 rounded-xl p-5 cursor-pointer transition-colors">
@@ -417,7 +417,7 @@ export default function HomePage() {
               {
                 "@type": "Question",
                 name: "Where is Impulsion Technologies located?",
-                acceptedAnswer: { "@type": "Answer", text: "Impulsion Technologies is located at Office 511, Clover Bay Tower, Business Bay, Dubai, UAE." },
+                acceptedAnswer: { "@type": "Answer", text: "Impulsion Technologies is located at Office# 402, Bin Sougat Building, Al Muraqqabat, Deira, Dubai, UAE." },
               },
             ],
           }),

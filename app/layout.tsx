@@ -91,11 +91,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "Leading IT company in Dubai providing ERP systems, custom software development, web & app development, digital marketing, SEO, and IT support across UAE.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Office 511, Clover Bay Tower, Business Bay",
+      streetAddress: "Office# 402, Bin Sougat Building, Al Muraqqabat, Deira",
       addressLocality: "Dubai",
       addressCountry: "AE",
     },
-    telephone: "+971585855890",
+    telephone: "+971501668568",
     email: "info@impulsionuae.com",
     foundingDate: "2018",
     numberOfEmployees: { "@type": "QuantitativeValue", value: 15 },
