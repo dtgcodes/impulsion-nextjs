@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Social Media Management Dubai | Impulsion Technologies", description: "Professional social media management in Dubai UAE. Instagram, Facebook, LinkedIn, TikTok content creation, posting, and community management." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Social Media Management Dubai | SMM Agency UAE",
+  description: "Expert social media management in Dubai. We create content, grow your audience, and manage Instagram, Facebook, LinkedIn & TikTok accounts to boost your UAE brand online.",
+  alternates: { canonical: "/services/social-media-management" },
+};
+
 export default function SMMPage() {
   return (
     <ServicePage

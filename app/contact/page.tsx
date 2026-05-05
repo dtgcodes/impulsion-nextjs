@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 export const metadata = {
   title: "Contact Us | Impulsion Technologies Dubai",
   description: "Get in touch with Impulsion Technologies for ERP systems, software development, web development, digital marketing, and IT solutions in Dubai, UAE.",
@@ -7,12 +9,12 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy-950 py-20 border-b border-white/5">
+      <section className="bg-[#020818] py-20 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <p className="text-orange-primary text-sm font-semibold uppercase tracking-widest mb-3">Contact Us</p>
+            <p className="text-[#f47c20] text-sm font-semibold uppercase tracking-widest mb-3">Contact Us</p>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Let&apos;s <span className="gradient-text">Talk Business</span>
+              Let&apos;s <span className="text-[#f47c20]">Talk Business</span>
             </h1>
             <p className="text-gray-300 text-lg">
               Ready to start your project? Have questions? Our team is here to help. Reach out and we&apos;ll get back to you within 24 hours.
@@ -21,7 +23,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-navy-900">
+      <section className="py-20 bg-[#030e25]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Info */}
@@ -53,15 +55,15 @@ export default function ContactPage() {
                   },
                 ].map((item) => (
                   <div key={item.label} className="flex gap-4">
-                    <div className="w-12 h-12 bg-orange-primary/10 border border-orange-primary/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-orange-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-12 h-12 bg-[#f47c20]/10 border border-[#f47c20]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-[#f47c20]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         {item.icon}
                       </svg>
                     </div>
                     <div>
                       <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">{item.label}</p>
                       {item.href
-                        ? <a href={item.href} className="text-white hover:text-orange-primary transition-colors">{item.value}</a>
+                        ? <a href={item.href} className="text-white hover:text-[#f47c20] transition-colors">{item.value}</a>
                         : <p className="text-white">{item.value}</p>
                       }
                     </div>
@@ -79,56 +81,10 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-navy-800 border border-white/5 rounded-2xl p-8">
+            {/* Contact Form Card */}
+            <div className="bg-[#050d2d] border border-white/5 rounded-2xl p-8">
               <h2 className="text-2xl font-bold text-white mb-6">Send Us a Message</h2>
-              <form className="space-y-5" action="mailto:info@impulsionuae.com" method="post" encType="text/plain">
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-gray-400 text-sm mb-2">Full Name *</label>
-                    <input type="text" name="name" required placeholder="John Smith"
-                      className="w-full bg-navy-950 border border-white/10 focus:border-orange-primary rounded-xl px-4 py-3 text-white placeholder-gray-600 outline-none transition-colors" />
-                  </div>
-                  <div>
-                    <label className="block text-gray-400 text-sm mb-2">Email *</label>
-                    <input type="email" name="email" required placeholder="john@company.com"
-                      className="w-full bg-navy-950 border border-white/10 focus:border-orange-primary rounded-xl px-4 py-3 text-white placeholder-gray-600 outline-none transition-colors" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-gray-400 text-sm mb-2">Phone</label>
-                  <input type="tel" name="phone" placeholder="+971 50 000 0000"
-                    className="w-full bg-navy-950 border border-white/10 focus:border-orange-primary rounded-xl px-4 py-3 text-white placeholder-gray-600 outline-none transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-gray-400 text-sm mb-2">Service Required</label>
-                  <select name="service" className="w-full bg-navy-950 border border-white/10 focus:border-orange-primary rounded-xl px-4 py-3 text-white outline-none transition-colors">
-                    <option value="">Select a service...</option>
-                    <option>ERP System</option>
-                    <option>Software Development</option>
-                    <option>Web Development</option>
-                    <option>App Development</option>
-                    <option>Digital Marketing</option>
-                    <option>SEO</option>
-                    <option>Social Media Management</option>
-                    <option>Google Ads</option>
-                    <option>Graphic Designing</option>
-                    <option>IT AMC Contract</option>
-                    <option>IT Networking & CCTV</option>
-                    <option>Computer Repair</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-gray-400 text-sm mb-2">Message *</label>
-                  <textarea name="message" required rows={5} placeholder="Tell us about your project..."
-                    className="w-full bg-navy-950 border border-white/10 focus:border-orange-primary rounded-xl px-4 py-3 text-white placeholder-gray-600 outline-none transition-colors resize-none" />
-                </div>
-                <button type="submit"
-                  className="w-full bg-orange-primary hover:bg-orange-dark text-white font-semibold py-3.5 rounded-xl transition-colors">
-                  Send Message →
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

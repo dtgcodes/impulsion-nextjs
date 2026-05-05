@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "App Development Dubai | Impulsion Technologies", description: "iOS and Android mobile app development in Dubai UAE. Native and cross-platform apps built for performance, scalability, and great user experience." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mobile App Development Dubai | iOS & Android Apps UAE",
+  description: "Professional mobile app development in Dubai for iOS and Android. We build high-performance, feature-rich apps for UAE businesses. Get a free quote from our expert app development team.",
+  alternates: { canonical: "/services/app-development" },
+};
+
 export default function AppDevPage() {
   return (
     <ServicePage

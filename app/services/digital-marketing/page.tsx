@@ -1,9 +1,13 @@
 import ServicePage from "@/components/ServicePage";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Digital Marketing Dubai | Impulsion Technologies",
-  description: "Results-driven digital marketing services in Dubai. Google Ads, Meta Ads, SEO, social media management, and more for UAE businesses.",
+export const metadata: Metadata = {
+  title: "Digital Marketing Agency Dubai | Google & Meta Ads UAE",
+  description: "Top digital marketing agency in Dubai. We run Google Ads, Meta Ads, TikTok campaigns & social media marketing that generate real leads and measurable ROI for UAE businesses.",
+  alternates: { canonical: "/services/digital-marketing" },
 };
+
+
 
 export default function DigitalMarketingPage() {
   return (

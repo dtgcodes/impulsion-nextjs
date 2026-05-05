@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "SEO Services Dubai | Impulsion Technologies", description: "Professional SEO services in Dubai UAE. Technical SEO, content strategy, link building, and local SEO to rank your website on Google page 1." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SEO Services Dubai | Best SEO Company UAE",
+  description: "Professional SEO services in Dubai. We help UAE businesses rank on Google page 1 with technical SEO, local SEO, content strategy & link building. Get a free SEO audit from Impulsion Technologies.",
+  alternates: { canonical: "/services/seo" },
+};
+
 export default function SEOPage() {
   return (
     <ServicePage

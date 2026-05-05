@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Accounting System Dubai | Impulsion Technologies", description: "Custom accounting system development in Dubai UAE. Automated invoicing, financial reporting, VAT compliance, and bookkeeping solutions." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Accounting Software Dubai | Custom Accounting System UAE",
+  description: "Custom accounting system development in Dubai. We build tailored accounting software for UAE businesses — invoicing, payroll, VAT filing, and real-time financial reporting.",
+  alternates: { canonical: "/services/accounting-system" },
+};
+
 export default function AccountingPage() {
   return (
     <ServicePage

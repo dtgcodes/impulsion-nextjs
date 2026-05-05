@@ -1,9 +1,13 @@
 import ServicePage from "@/components/ServicePage";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Web Development Dubai | Impulsion Technologies",
-  description: "Professional web development services in Dubai. We build fast, modern, and scalable websites and web applications for businesses across UAE.",
+export const metadata: Metadata = {
+  title: "Web Development Dubai | Website Design & Development UAE",
+  description: "Expert web development company in Dubai. We build fast, SEO-optimized websites, e-commerce stores, and web apps that rank on Google and convert visitors into customers across the UAE.",
+  alternates: { canonical: "/services/web-development" },
 };
+
+
 
 export default function WebDevPage() {
   return (

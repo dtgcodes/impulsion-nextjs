@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "IT Networking & CCTV Dubai | Impulsion Technologies", description: "Professional IT networking and CCTV installation in Dubai UAE. Office network setup, structured cabling, WiFi, and CCTV surveillance systems." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IT Networking & CCTV Installation Dubai | Network Setup UAE",
+  description: "Professional IT networking and CCTV installation in Dubai. Office network setup, structured cabling, WiFi systems, and security cameras for UAE businesses. Fast and reliable service.",
+  alternates: { canonical: "/services/it-networking-cctv" },
+};
+
 export default function NetworkingPage() {
   return (
     <ServicePage

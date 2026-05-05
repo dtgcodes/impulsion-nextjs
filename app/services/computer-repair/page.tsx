@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Computer Repair Dubai | Impulsion Technologies", description: "Fast, reliable laptop and computer repair services in Dubai Business Bay. Hardware repair, data recovery, virus removal, and IT support." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Computer & Laptop Repair Dubai | IT Support UAE",
+  description: "Fast and reliable computer and laptop repair in Dubai. Hardware fixes, data recovery, virus removal, screen replacement, and IT support for homes and businesses across the UAE.",
+  alternates: { canonical: "/services/computer-repair" },
+};
+
 export default function ComputerRepairPage() {
   return (
     <ServicePage

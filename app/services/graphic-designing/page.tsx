@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Graphic Designing Dubai | Impulsion Technologies", description: "Professional graphic design services in Dubai UAE. Logo design, brand identity, marketing materials, social media graphics, and more." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Graphic Design Dubai | Logo & Brand Identity UAE",
+  description: "Creative graphic design services in Dubai. Logo design, brand identity, social media graphics & marketing materials for UAE businesses. Professional design team — get a free quote today.",
+  alternates: { canonical: "/services/graphic-designing" },
+};
+
 export default function GraphicDesignPage() {
   return (
     <ServicePage

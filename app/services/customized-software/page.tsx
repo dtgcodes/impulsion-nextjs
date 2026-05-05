@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Customized Software Dubai | Impulsion Technologies", description: "Custom software development in Dubai UAE. Any type of specialized business software built from scratch to your exact requirements." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Customized Software Development Dubai | Bespoke Business Software UAE",
+  description: "Bespoke software development in Dubai tailored to your exact business needs. We build custom tools, automation software, portals, and enterprise applications for UAE companies.",
+  alternates: { canonical: "/services/customized-software" },
+};
+
 export default function CustomSoftwarePage() {
   return (
     <ServicePage

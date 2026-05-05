@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "IT AMC Contract Dubai | Impulsion Technologies", description: "IT Annual Maintenance Contract services in Dubai UAE. Comprehensive IT support, maintenance, and network management for businesses." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IT AMC Contract Dubai | Annual IT Maintenance UAE",
+  description: "Reliable IT AMC (Annual Maintenance Contract) services in Dubai. 24/7 IT support, proactive maintenance, and network monitoring for UAE businesses. Protect your IT infrastructure today.",
+  alternates: { canonical: "/services/it-amc-contract" },
+};
+
 export default function ITAMCPage() {
   return (
     <ServicePage

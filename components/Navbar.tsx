@@ -114,8 +114,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="lg:hidden bg-[#050d2d] border-t border-white/5 px-4 py-4">
+      <div className={`lg:hidden bg-[#050d2d] border-t border-white/5 px-4 overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? "max-h-[650px] opacity-100 py-4" : "max-h-0 opacity-0 py-0"}`}>
           {[
             { label: "Home", href: "/" },
             { label: "About Us", href: "/about" },
@@ -157,8 +156,7 @@ export default function Navbar() {
               Get A Quote
             </Link>
           </div>
-        </div>
-      )}
+      </div>
     </header>
   );
 }

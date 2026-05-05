@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Meta Ads (Facebook & Instagram Ads) Dubai | Impulsion Technologies", description: "Expert Meta Ads management in Dubai UAE. Facebook and Instagram advertising campaigns managed for lead generation, sales, and brand awareness." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Meta Ads Dubai | Facebook & Instagram Advertising UAE",
+  description: "Professional Meta Ads (Facebook & Instagram) management in Dubai. We run targeted ad campaigns that generate leads and sales for UAE businesses. Free Meta Ads consultation available.",
+  alternates: { canonical: "/services/meta-ads" },
+};
+
 export default function MetaAdsPage() {
   return (
     <ServicePage

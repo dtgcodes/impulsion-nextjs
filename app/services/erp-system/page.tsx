@@ -1,9 +1,13 @@
 import ServicePage from "@/components/ServicePage";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "ERP System Development Dubai | Impulsion Technologies",
-  description: "Custom ERP system development in Dubai, UAE. We build fully integrated enterprise resource planning systems for manufacturing, trading, shipping, and more.",
+export const metadata: Metadata = {
+  title: "Custom ERP System Development Dubai | ERP Software UAE",
+  description: "Build a fully customized ERP system in Dubai. Impulsion Technologies develops ERP solutions for finance, HR, inventory, sales & operations. Trusted by 200+ UAE businesses. Get a free quote.",
+  alternates: { canonical: "/services/erp-system" },
 };
+
+
 
 export default function ERPPage() {
   return (

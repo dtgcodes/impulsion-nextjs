@@ -1,5 +1,12 @@
 import ServicePage from "@/components/ServicePage";
-export const metadata = { title: "Google Ads Management Dubai | Impulsion Technologies", description: "Expert Google Ads management in Dubai UAE. PPC campaigns on Search, Display, YouTube, and Shopping managed for maximum ROI." };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Google Ads Management Dubai | PPC Agency UAE",
+  description: "Certified Google Ads management in Dubai. We create and optimize PPC campaigns on Search, Display & YouTube that drive qualified leads and maximize ROI for UAE businesses.",
+  alternates: { canonical: "/services/google-ads" },
+};
+
 export default function GoogleAdsPage() {
   return (
     <ServicePage
