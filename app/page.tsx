@@ -1,17 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ParticleNetwork from "@/components/ParticleNetwork";
 import TypingText from "@/components/TypingText";
 
+export const metadata: Metadata = {
+  title: "Impulsion Technologies | #1 IT Company in Dubai — ERP, Software & Digital Marketing",
+  description:
+    "Impulsion Technologies is Dubai's top-rated IT company. We build ERP systems, custom software, websites, mobile apps, and run digital marketing & SEO campaigns across the UAE. Get a free quote today.",
+  alternates: { canonical: "/" },
+};
+
 const services = [
-  { icon: "💻", title: "ERP System", desc: "Fully customized ERP to manage finance, HR, inventory, sales, and more.", href: "/services/erp-system" },
-  { icon: "🛠️", title: "Software Development", desc: "Bespoke business applications built exactly to your workflow requirements.", href: "/services/software-development" },
-  { icon: "🌐", title: "Web Development", desc: "Modern, fast, SEO-optimized websites and web apps that convert.", href: "/services/web-development" },
-  { icon: "📱", title: "App Development", desc: "iOS & Android mobile apps with stunning UI and powerful backend.", href: "/services/app-development" },
-  { icon: "📈", title: "Digital Marketing", desc: "Google, Meta, TikTok & more — campaigns that drive real growth.", href: "/services/digital-marketing" },
-  { icon: "🔍", title: "SEO", desc: "Rank higher on Google and drive sustainable organic traffic.", href: "/services/seo" },
-  { icon: "🎨", title: "Graphic Designing", desc: "Logos, brand identity, and marketing materials with visual impact.", href: "/services/graphic-designing" },
-  { icon: "🔧", title: "IT AMC Contract", desc: "Annual IT maintenance so your business never goes down.", href: "/services/it-amc-contract" },
+  { icon: "💻", title: "ERP System Dubai", desc: "Custom ERP solutions in Dubai to manage finance, HR, inventory, sales, and operations — all in one powerful platform.", href: "/services/erp-system" },
+  { icon: "🛠️", title: "Software Development", desc: "Bespoke business software development in Dubai built exactly to your workflow — scalable, secure, and future-proof.", href: "/services/software-development" },
+  { icon: "🌐", title: "Web Development Dubai", desc: "Fast, modern, SEO-optimized websites and web applications that rank on Google and convert visitors into customers.", href: "/services/web-development" },
+  { icon: "📱", title: "App Development UAE", desc: "iOS & Android mobile app development in Dubai with stunning UI, smooth UX, and powerful backend integration.", href: "/services/app-development" },
+  { icon: "📈", title: "Digital Marketing Dubai", desc: "Google Ads, Meta Ads, TikTok & social media marketing campaigns in Dubai that drive real leads and measurable ROI.", href: "/services/digital-marketing" },
+  { icon: "🔍", title: "SEO Services Dubai", desc: "Professional SEO services in Dubai to rank higher on Google, increase organic traffic, and grow your business online.", href: "/services/seo" },
+  { icon: "🎨", title: "Graphic Designing", desc: "Professional logo design, brand identity, and marketing materials that make your Dubai business stand out.", href: "/services/graphic-designing" },
+  { icon: "🔧", title: "IT AMC Contract Dubai", desc: "Annual IT maintenance contracts in Dubai — proactive support, network monitoring, and zero downtime for your business.", href: "/services/it-amc-contract" },
 ];
 
 const portfolio = [
@@ -52,7 +60,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl z-10 pointer-events-none">
           <Image
             src="/hero-planet.png"
-            alt=""
+            alt="Impulsion Technologies — IT Services Dubai"
             width={800}
             height={440}
             className="w-full object-contain object-bottom"
@@ -67,22 +75,23 @@ export default function HomePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2 mb-8 text-sm text-gray-300">
             <span className="w-2 h-2 rounded-full bg-[#f47c20] animate-pulse" />
-            🇦🇪 Leading IT Company in Dubai, UAE
+            🇦🇪 Top-Rated IT Company in Dubai, UAE
           </div>
 
-          {/* Headline */}
+          {/* H1 — primary keyword target */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight mb-4">
-            Smart IT Solutions
+            #1 IT Company in <span className="text-[#f47c20]">Dubai</span>
           </h1>
 
-          {/* Typing rotating text */}
+          {/* Typing rotating text — secondary keywords */}
           <div className="text-4xl sm:text-5xl lg:text-6xl font-black mb-7 min-h-[1.2em]">
             <TypingText />
           </div>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            Web Designing, Software Development & Digital Marketing Company in Dubai.
-            Ranked #1 by 10 Best SEO for Local and Enterprise SEO.
+            Trusted by <strong className="text-white">200+ businesses across the UAE</strong> — we deliver
+            custom ERP systems, software development, web &amp; app development, digital marketing,
+            SEO, and IT support solutions in Dubai.
           </p>
 
           {/* Buttons */}
@@ -105,9 +114,9 @@ export default function HomePage() {
       <section className="py-24 bg-[#020818]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">What We Offer</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">Our Core <span className="text-[#f47c20]">Services</span></h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">Complete IT and marketing solutions to grow, automate, and scale your business — all under one roof in Dubai.</p>
+            <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">IT Services in Dubai, UAE</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">Complete IT &amp; Digital <span className="text-[#f47c20]">Solutions</span></h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">From ERP systems and custom software to web development, mobile apps, SEO, and digital marketing — everything your Dubai business needs to grow, automate, and scale.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -145,13 +154,13 @@ export default function HomePage() {
             <div className="relative h-[540px]">
               {/* main photo */}
               <div className="absolute left-0 top-0 w-[72%] h-full rounded-3xl overflow-hidden shadow-2xl shadow-black/50 border border-white/8">
-                <Image src="/team.jpg" alt="Impulsion Team" fill className="object-cover" />
+                <Image src="/team.jpg" alt="Impulsion Technologies team working on IT solutions in Dubai" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#020818]/60 via-transparent to-transparent" />
               </div>
 
               {/* floating secondary photo */}
               <div className="absolute right-0 top-[10%] w-[46%] h-[52%] rounded-2xl overflow-hidden shadow-2xl shadow-black/60 border-2 border-[#020818]">
-                <Image src="/team2.jpg" alt="Impulsion Office" fill className="object-cover" />
+                <Image src="/team2.jpg" alt="Impulsion Technologies office in Business Bay, Dubai" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#f47c20]/10 to-transparent" />
               </div>
 
@@ -184,11 +193,11 @@ export default function HomePage() {
               </div>
 
               <h2 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-5">
-                Your Trusted <span className="text-[#f47c20]">IT Partner</span><br className="hidden sm:block" /> in Dubai
+                Dubai&apos;s Most Trusted <span className="text-[#f47c20]">IT Company</span>
               </h2>
 
               <p className="text-gray-400 text-base leading-relaxed mb-8 border-l-2 border-[#f47c20]/40 pl-4">
-                Impulsion Technologies concentrates on quality, innovation, and timely work. We are dedicated to exceeding customers&apos; expectations by offering outstanding business solutions. With 6 years of experience, we&apos;ve served organisations from small startups to large multinationals across the UAE.
+                Impulsion Technologies is a leading IT company in Dubai, UAE, focused on quality, innovation, and on-time delivery. We have helped <strong className="text-white">200+ businesses</strong> — from small startups to large multinationals — with custom ERP systems, software development, web design, mobile apps, digital marketing, and SEO services across the UAE.
               </p>
 
               {/* Feature cards */}
@@ -257,8 +266,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-14 gap-6">
             <div>
-              <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">Our Portfolio</p>
-              <h2 className="text-4xl sm:text-5xl font-black text-white">ERP Systems <span className="text-[#f47c20]">We&apos;ve Built</span></h2>
+              <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">Our Work — Dubai & UAE</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-white">ERP Systems Built <span className="text-[#f47c20]">for UAE Businesses</span></h2>
             </div>
             <Link href="/our-work" className="text-[#f47c20] text-sm font-semibold hover:underline whitespace-nowrap">View All Projects →</Link>
           </div>
@@ -290,8 +299,9 @@ export default function HomePage() {
       <section className="py-24 bg-[#050d2d]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">Client Reviews</p>
-            <h2 className="text-4xl font-black text-white">What Our <span className="text-[#f47c20]">Clients Say</span></h2>
+            <p className="text-[#f47c20] text-xs font-bold uppercase tracking-[5px] mb-3">5-Star Reviews — Dubai, UAE</p>
+            <h2 className="text-4xl font-black text-white">What Our <span className="text-[#f47c20]">Dubai Clients Say</span></h2>
+            <p className="text-gray-400 mt-3 max-w-xl mx-auto text-sm">Trusted by businesses across Dubai, Abu Dhabi, Sharjah and the UAE.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
@@ -318,7 +328,103 @@ export default function HomePage() {
       </section>
 
 
-{/* ─────────────────── WhatsApp Float ─────────────────── */}
+      {/* ─────────────────── SEO TEXT BLOCK ─────────────────── */}
+      <section className="py-16 bg-[#020818] border-t border-white/5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-black text-white mb-6">
+            Leading IT Company in Dubai, UAE — Impulsion Technologies
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 text-gray-400 text-sm leading-relaxed">
+            <div>
+              <p className="mb-4">
+                <strong className="text-gray-300">Impulsion Technologies</strong> is a full-service IT company based in <strong className="text-gray-300">Business Bay, Dubai, UAE</strong>. We specialise in building custom ERP systems, enterprise software, responsive websites, and mobile apps for businesses of all sizes across the UAE. Whether you are a startup in Dubai or a large enterprise in Abu Dhabi, our team delivers scalable technology solutions tailored to your exact business needs.
+              </p>
+              <p>
+                Our <strong className="text-gray-300">digital marketing services in Dubai</strong> include SEO, Google Ads (PPC), Meta Ads, social media management, and content marketing — helping UAE businesses rank higher on Google and generate consistent, high-quality leads online.
+              </p>
+            </div>
+            <div>
+              <p className="mb-4">
+                As a <strong className="text-gray-300">certified IT support company in Dubai</strong>, we also offer annual maintenance contracts (IT AMC), IT networking, CCTV installation, and computer repair services for offices across the UAE. Our 24/7 support team ensures your business stays connected and operational at all times.
+              </p>
+              <p>
+                With <strong className="text-gray-300">6+ years of experience</strong> and 200+ successful projects delivered across Dubai, Sharjah, Abu Dhabi, and beyond, Impulsion Technologies is your trusted partner for all IT and digital needs in the UAE.{" "}
+                <Link href="/contact" className="text-[#f47c20] hover:underline font-semibold">Contact us today for a free consultation.</Link>
+              </p>
+            </div>
+          </div>
+
+          {/* FAQ — also renders as JSON-LD below */}
+          <div className="mt-12">
+            <h3 className="text-white font-bold text-xl mb-6">Frequently Asked Questions</h3>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "What IT services does Impulsion Technologies offer in Dubai?",
+                  a: "Impulsion Technologies offers ERP systems, custom software development, web development, mobile app development, digital marketing, SEO, graphic design, IT AMC contracts, IT networking, CCTV installation, and computer repair services in Dubai and across the UAE.",
+                },
+                {
+                  q: "How much does a custom ERP system cost in Dubai?",
+                  a: "The cost of a custom ERP system in Dubai varies based on the modules required, company size, and integrations needed. Impulsion Technologies offers flexible pricing packages for startups and enterprises. Contact us for a free quote tailored to your business.",
+                },
+                {
+                  q: "Does Impulsion Technologies provide SEO services in Dubai?",
+                  a: "Yes, we provide professional SEO services in Dubai including on-page SEO, technical SEO, local SEO, link building, and content optimisation to help your business rank higher on Google and attract organic traffic.",
+                },
+                {
+                  q: "Where is Impulsion Technologies located?",
+                  a: "Impulsion Technologies is located at Office 511, Clover Bay Tower, Business Bay, Dubai, UAE. We serve clients across Dubai, Abu Dhabi, Sharjah, and the wider Middle East region.",
+                },
+              ].map((faq, i) => (
+                <details key={i} className="group bg-[#050d2d] border border-white/8 hover:border-[#f47c20]/30 rounded-xl p-5 cursor-pointer transition-colors">
+                  <summary className="text-white font-semibold text-sm list-none flex items-center justify-between gap-3">
+                    {faq.q}
+                    <svg className="w-4 h-4 text-[#f47c20] flex-shrink-0 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p className="mt-3 text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What IT services does Impulsion Technologies offer in Dubai?",
+                acceptedAnswer: { "@type": "Answer", text: "Impulsion Technologies offers ERP systems, custom software development, web development, mobile app development, digital marketing, SEO, graphic design, IT AMC contracts, IT networking, CCTV installation, and computer repair services in Dubai and across the UAE." },
+              },
+              {
+                "@type": "Question",
+                name: "How much does a custom ERP system cost in Dubai?",
+                acceptedAnswer: { "@type": "Answer", text: "The cost of a custom ERP system in Dubai varies based on the modules required, company size, and integrations needed. Impulsion Technologies offers flexible pricing packages for startups and enterprises." },
+              },
+              {
+                "@type": "Question",
+                name: "Does Impulsion Technologies provide SEO services in Dubai?",
+                acceptedAnswer: { "@type": "Answer", text: "Yes, we provide professional SEO services in Dubai including on-page SEO, technical SEO, local SEO, link building, and content optimisation." },
+              },
+              {
+                "@type": "Question",
+                name: "Where is Impulsion Technologies located?",
+                acceptedAnswer: { "@type": "Answer", text: "Impulsion Technologies is located at Office 511, Clover Bay Tower, Business Bay, Dubai, UAE." },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* ─────────────────── WhatsApp Float ─────────────────── */}
       <a href="https://wa.me/971585855890" target="_blank" rel="noopener noreferrer" className="wa-btn" aria-label="WhatsApp">
         <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
